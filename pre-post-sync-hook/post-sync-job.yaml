@@ -11,6 +11,6 @@ spec:
       containers:
       - name: sleep
         image: quay.io/acend/example-web-go
-        command: ["sleep", "10"]
+        command: ["curl", "https://acend.ch"]
       restartPolicy: Never
   backoffLimit: 0
