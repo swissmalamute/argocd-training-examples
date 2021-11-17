@@ -5,7 +5,7 @@ metadata:
   name: simple-example
 spec:
   rules:
-    - host: simple-example-student27.http://labapp.acend.ch
+    - host: simple-example-student27.labapp.acend.ch
       http:
         paths:
           - path: /
