@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app-of-apps-1
-  namespace: pitc-infra-argocd
+  namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -12,5 +12,5 @@ spec:
   project: default
   source:
     path: app-of-apps/app1
-    repoURL: https://github.com/acend/argocd-training
+    repoURL: https://github.com/swissmalamute/argocd-training-examples
     targetRevision: HEAD
